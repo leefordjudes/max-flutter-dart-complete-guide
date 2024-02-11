@@ -1,4 +1,4 @@
-# flutter & dart complete guide by max
+# flutter & dart complete guide by Maximilian Schwarzmüller
 
 ## 1. Simple Stateless Widget
 ### Widgets Used
