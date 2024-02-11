@@ -48,7 +48,7 @@
     11. random number generation
     12. children, child
 
-## 3. Quiz - Some Basic & Advanced Concepts
+## 3. Quiz - Foundation ( Basic & Some Advanced Concepts )
 ### Widgets Used
     1. GoogleFonts
     2. OutlinedButton
