@@ -59,6 +59,9 @@
     7. Padding
     8. EdgeInsets - all, symmetric, only
     9. Function
+    10. ButtonStyle
+    11. ElevatedButton
+    12. MaterialStatePropertyAll
 
 ### Concepts
     1. using multiple functions
