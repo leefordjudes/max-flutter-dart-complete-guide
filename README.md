@@ -95,7 +95,7 @@
 ### Packages
     1. google_fonts
     
-## 4. Expense Tracker - Intermediate
+## 4. Expense Tracker - Interactivity, Themeing
 ### Widgets Used
     1. ColorScheme
     2. ThemeMode
