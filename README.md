@@ -209,3 +209,16 @@
     2. getting platform information
     3. getting device width using media query
     4. building responsive view using layout builder
+
+## 6. Flutter Internals
+### Widgets Used
+    1. Align
+    2. ValueKey, ObjectKey
+    3. Checkbox
+    
+### Concepts
+    1. difference between var, final, const
+    2. understanding about 3 type of trees
+        WidgetTree - ElementTree - RenderTree
+    3. understanding about keys
+    4. checkbox onchanged callback
