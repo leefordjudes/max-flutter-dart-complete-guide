@@ -1,5 +1,7 @@
 # flutter & dart complete guide by Maximilian Schwarzmüller
 
+https://github.com/academind/flutter-complete-guide-course-resources
+
 ## 1. Simple Stateless Widget
 ### Widgets Used
     1. MaterialApp
@@ -222,3 +224,48 @@
         WidgetTree - ElementTree - RenderTree
     3. understanding about keys
     4. checkbox onchanged callback
+
+## 7. Grid, Tab, Drawer - Navigation & Multi-Screen Apps
+### Command
+    flutter create  
+                -e meals 
+                --platforms android,windows 
+                --org "com.cjtech"
+### Widgets Used   
+    1. MaterialPageRoute
+    2. Navigator.of().push, pop, pushReplacement
+    3. SwitchListTile
+    4. PopScope
+    5. (grid) GridView, SliverGridDelegateWithFixedCrossAxisCount, 
+        its properties
+    6. InkWell
+    7. (tabs) BottomNavigationBar, BottomNavigationBarItem
+    8. (drawer) Drawer, DrawerHeader, ListTile
+    9. ListView, SingleChildScrollView
+    10. Image, BoxFit, 
+    11. FadeInImage, MemoryImage - transparent image, NetworkImage
+    12. Positioned
+    13. TextOverflow - trim very long text with ...
+    14. Card, RoundedRectangleBorder, BorderRadius, Clip
+    15. Stack
+    16. Function  
+
+### Concepts
+    1. Managing Screen Stacks
+    2. Working with Tab Bars - Bottom navigation bar
+    3. Using Side Drawers
+    4. Align items using Grid
+    5. Themeing: colorScheme, textTheme
+    6. Custom & global - kConstants
+    7. State managements without any external tools
+    8. Passing function with parameters to widgets
+    9. Returning values from widgets using Navigator functions
+    10. AppBar actions
+    11. returning widgets using for loop to children 
+        [Widget collection]
+    
+
+
+
+### Packages
+    1. transparent_image
