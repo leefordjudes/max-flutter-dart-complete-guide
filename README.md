@@ -249,6 +249,8 @@ https://github.com/academind/flutter-complete-guide-course-resources
     14. Card, RoundedRectangleBorder, BorderRadius, Clip
     15. Stack
     16. Function  
+    17. Icon, IconData
+    18. IconButton
 
 ### Concepts
     1. Managing Screen Stacks
@@ -264,8 +266,29 @@ https://github.com/academind/flutter-complete-guide-course-resources
     11. returning widgets using for loop to children 
         [Widget collection]
     
-
-
-
 ### Packages
     1. transparent_image
+
+## 8. State Management - using riverpod
+### Widgets 
+    1. ProviderScope, 
+    2. Provider
+    3. StateNotifier, StateNotifierProvider, [ClassName]Notifier
+    4. ConsumerStatefulWidget, ConsumerState
+    5. ConsumerWidget, WidgetRef,
+
+### Concepts
+    1. simple provider - meals provider
+    2. state notifier provider & state notifier
+    3. setting initial values to state notifier,
+       state notifier provider with its notifier class 
+    4. using state inside another state
+    5. widget ref - read, watch
+    6. calling functions within notifier class
+    7. switching icons on click, appbar icons, appbar actions
+    8. using popscope with state
+
+### Packages
+    1. flutter_riverpod - 2.5.1
+    2. transparent_image - 2.0.1
+    3. google_fonts - 6.2.1
