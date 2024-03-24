@@ -42,6 +42,10 @@ class _FiltersScreenState extends State<FiltersScreen> {
       appBar: AppBar(
         title: const Text('Your Filters'),
       ),
+      // We can have drawer instead on <- back button on this screen top left,
+      // here if we use push instead of pushReplacement,
+      // it works but creates widget stacks, 
+      // you can see it by pressing back button on mobile/emulator
       // drawer: MainDrawer(
       //   onSelectScreen: (identifier) {
       //     Navigator.of(context).pop();
