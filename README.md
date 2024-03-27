@@ -325,3 +325,4 @@ https://github.com/academind/flutter-complete-guide-course-resources
 ## References:
     1. https://docs.flutter.dev/ui/animations => Other resources
     2. https://docs.flutter.dev/ui/animations/tutorial
+    3. https://docs.flutter.dev/ui/widgets/animation
