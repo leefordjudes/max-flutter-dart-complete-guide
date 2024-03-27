@@ -292,3 +292,36 @@ https://github.com/academind/flutter-complete-guide-course-resources
     1. flutter_riverpod - 2.5.1
     2. transparent_image - 2.0.1
     3. google_fonts - 6.2.1
+
+## 9. Animation
+### Widgets
+    Explicit Animation
+    1. SingleTickerProviderStateMixin
+    2. TickerProviderStateMixin
+    3. AnimationController
+    4. AnimatedBuilder
+    5. SlideTransition
+    6. Tween
+    7. CurvedAnimation
+
+    Implicit Animation
+    1. AnimatedSwitcher
+    2. RotationTransition
+
+    Multi-Screen Transitions
+    1. Hero
+ 
+
+### Concepts
+    1. Explicit Animation => CategoriesScreen
+        a. initialize animation controller in initState
+        b. dispose
+    2. Building a Custom Animation
+    3. Implicit Animation => MealDetailsScreen
+    4. Using Built-in Animation Widgets
+    5. Multi Screen Transition => MealItem to MealDetailsScreen
+    
+    
+## References:
+    1. https://docs.flutter.dev/ui/animations => Other resources
+    2. https://docs.flutter.dev/ui/animations/tutorial
