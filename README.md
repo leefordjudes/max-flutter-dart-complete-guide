@@ -326,3 +326,35 @@ https://github.com/academind/flutter-complete-guide-course-resources
     1. https://docs.flutter.dev/ui/animations => Other resources
     2. https://docs.flutter.dev/ui/animations/tutorial
     3. https://docs.flutter.dev/ui/widgets/animation
+
+## 10. Handling User Input with Forms & Http
+### Command
+    flutter create  -e shopping_list 
+                    --platforms android,windows 
+                    --org "in.cjtech"
+### Widgets
+    1. Form,
+    2. TextFormField
+
+### Concepts
+    1. Building & Using Forms
+    2. Showing On-Screen Validation Errors
+    3. Form Submission & Resetting
+    4. Map of enum as key, and class object as value, 
+       Array of class objects,
+       Accessing Map with enum as key
+    5. Forms and Form related input widgets
+
+
+
+### Ref:
+    https://firebase.google.com/docs/reference/rest/database
+    https://console.firebase.google.com/u/2/project/aj-shopping-list/database
+ https://aj-shopping-list-default-rtdb.asia-southeast1.firebasedatabase.app/
+
+## 11. Using Native Device Features
+
+### Concepts
+    1. Accessing the camera
+    2. Getting the users location and displaying the map
+    3. storing data on the device
