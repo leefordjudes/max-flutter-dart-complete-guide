@@ -1,0 +1,127 @@
+vstuty1@gmail.com
+Aplus@123#
+
+https://geocode.maps.co/
+API KEY:
+66098f4105ed8366566642euscfb3d3
+
+
+https://geocode.maps.co/reverse?lat=8.8164533&lon=78.1540533&api_key=66098f4105ed8366566642euscfb3d3
+
+
+https://www.google.com/maps/@8.816072,78.1537618,139m/data=!3m1!1e3?entry=ttu
+https://www.google.com/maps/@8.857626,78.1599068,70m/data=!3m1!1e3?entry=ttu
+
+https://source.unsplash.com/random/600×300/?map 123
+${DateTime.now().millisecondsSinceEpoch.toString()}
+
+
+https://firebase.google.com/docs/cli#windows-npm
+npm install -g firebase-tools
+
+https://firebase.google.com/docs/flutter/setup?platform=web
+firebase login
+
+dart pub global activate flutterfire_cli
+
+
+c:\your-flutter-proj\> flutterfire configure
+
+C:\WFFT\chat_app> flutterfire configure
+i Found 2 Firebase projects.
+✔ Select a Firebase project to configure your Flutter application with · aj-chat-app-af29b (aj-chat-app)
+✔ Which platforms should your configuration support (use arrow keys & space to select)? · android, web
+i Firebase android app in.cjtech.chat_app is not registered on Firebase project aj-chat-app-af29b.
+i Registered a new Firebase android app on Firebase project aj-chat-app-af29b.
+i Firebase web app chat_app (web) is not registered on Firebase project aj-chat-app-af29b.
+i Registered a new Firebase web app on Firebase project aj-chat-app-af29b.
+
+Firebase configuration file lib\firebase_options.dart generated successfully with the following Firebase apps:
+
+Platform  Firebase App Id
+web       1:216885401392:web:a2a7e915d79cdb78b39af5
+android   1:216885401392:android:27e72834104edf00b39af5
+
+Learn more about using this file and next steps from the documentation:
+ > https://firebase.google.com/docs/flutter/setup
+C:\WFFT\chat_app>
+
+https://firebase.google.com/docs/flutter/setup?platform=web
+flutter pub add firebase_core
+flutter pub add firebase_auth
+
+
+user@user.com
+123456
+flutterfire configure
+UserCredential(additionalUserInfo: AdditionalUserInfo(isNewUser: true, profile: {}, providerId: null, username: null, authorizationCode: null), credential: null, user: User(displayName: null, email: user@user.com, isEmailVerified: false, isAnonymous: false, metadata: UserMetadata(creationTime: 2024-04-02 08:11:26.261Z, lastSignInTime: 2024-04-02 08:11:26.261Z), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: user@user.com, phoneNumber: null, photoURL: null, providerId: password, uid: user@user.com)], refreshToken: null, tenantId: null, uid: U45j4irisbaJZRb3yeQ245D5e9q1))
+
+
+allow read, write: if request.auth != null;
+
+Install the FCM plugin
+
+https://firebase.google.com/docs/cloud-messaging/flutter/client
+
+flutter pub add firebase_messaging
+
+cM7M06CVRviAaf2_nL30zF:APA91bE__LgMBIhvqYfJHM0pk5Cy4FxjYnRvFuJYUSyk5KboCu-1jAFMYTocg2FlTXdKMT6J7jEKdsmJW61tdZ-GKw-neu5iIKbAa_HwqncF7KfyPcbg5GpOgUa3DWPTsAJy-uRZOeuP
+
+You can send push notifications by using programatic way automatically,
+it requires credit card setup.
+
+you can get free limit for that.
+
+To setup firebase functions to work:
+$ npm install -g firebase-tools
+
+$ firebase init
+
+
+Then choose 
+$-> Functions: Configure a Cloud Functions directory and its files
+
+Then choose 
+$-> use an existing project
+
+after writting functions, you can deploy.
+
+$-> select javascript - to write function language
+$-> dont use eslint for now -> N
+$-> install deps -> Y
+
+This will creates folder "functions" in your flutter project root folder.
+
+------------------------------------------------------------------------------------------
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+
+admin.initializeApp();
+
+// Cloud Firestore triggers ref: https://firebase.google.com/docs/functions/firestore-events
+exports.myFunction = functions.firestore
+  .document("chat/{messageId}")
+  .onCreate((snapshot, context) => {
+    // Return this function's promise, so this ensures the firebase function
+    // will keep running, until the notification is scheduled.
+    return admin.messaging().sendToTopic("chat", {
+      // Sending a notification message.
+      notification: {
+        title: snapshot.data()["username"],
+        body: snapshot.data()["text"],
+        clickAction: "FLUTTER_NOTIFICATION_CLICK",
+      },
+    });
+  });
+-------------------------------------------------------------------------------------------  
+Now deploy
+$ firebase deploy
+
+now restart the app.
+
+Goto firebase project settings:
+Goto CloudMessaging
+	there Enable Cloud Messaging API Legacy
+	
+Now you can get push notifications.
+	

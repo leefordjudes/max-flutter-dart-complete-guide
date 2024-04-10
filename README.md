@@ -327,7 +327,7 @@ https://github.com/academind/flutter-complete-guide-course-resources
     2. https://docs.flutter.dev/ui/animations/tutorial
     3. https://docs.flutter.dev/ui/widgets/animation
 
-## 10. Handling User Input with Forms & Http
+## 10. Handling User Input with Forms & Http (Shopping List)
 ### Command
     flutter create  -e shopping_list 
                     --platforms android,windows 
@@ -345,8 +345,6 @@ https://github.com/academind/flutter-complete-guide-course-resources
        Accessing Map with enum as key
     5. Forms and Form related input widgets
 
-
-
 ### Ref:
     https://firebase.google.com/docs/reference/rest/database
     https://console.firebase.google.com/u/2/project/aj-shopping-list/database
@@ -358,3 +356,14 @@ https://github.com/academind/flutter-complete-guide-course-resources
     1. Accessing the camera
     2. Getting the users location and displaying the map
     3. storing data on the device
+
+## 12. Building an Advanced App - Chat app using firebase
+
+### Command
+    flutter create -e chat_app --platforms android,windows --org "in.cjtech"
+### Concepts
+    1. Adding Authentication, Image Upload, Push Notifications & More
+        a. Connecting a (Third-Party) Backend via a SDK
+        b. Adding User Authentication
+        c. Uploading Images to a Backend
+        d. Sending & Handling Push Notifications
